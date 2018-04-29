@@ -76,6 +76,7 @@ module.exports = {
       "never"
     ],
     "sort-imports": "warn",
+    "no-var": "error",
 
     // FP options
     "fp/no-arguments": "error",
@@ -88,8 +89,7 @@ module.exports = {
     "fp/no-mutating-methods": "error",
     "fp/no-proxy": "error",
     "fp/no-rest-parameters": "error",
-    "fp/no-valueof-field": "error",
-    "no-var": "error"
+    "fp/no-valueof-field": "error"
   }
 }
 
