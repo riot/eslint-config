@@ -77,6 +77,7 @@ module.exports = {
     ],
     "sort-imports": "warn",
     "no-var": "error",
+    "eqeqeq": ["error", "always"],
 
     // FP options
     "fp/no-arguments": "error",
