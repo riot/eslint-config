@@ -3,6 +3,9 @@ logs
 *.log
 npm-debug.log*
 
+# Editor config
+.idea
+
 # Runtime data
 pids
 *.pid
