@@ -12,7 +12,7 @@ Riot default eslint config file
 Peer dependencies installation
 
 ```shell
-npm in -D eslint@8 eslint-plugin-fp@2 eslint-config-prettier@8 prettier@2
+npm i -D eslint@8 eslint-plugin-fp@2 eslint-config-prettier@8 prettier@2
 ```
 
 Config installation
