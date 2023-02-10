@@ -4,7 +4,7 @@ module.exports = {
   plugins: ['fp'],
   env: {
     browser: true,
-    es6: true,
+    es2022: true,
     mocha: true,
     node: true,
   },
