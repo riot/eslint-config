@@ -24,14 +24,14 @@
   "homepage": "https://github.com/riot/eslint-config#readme",
   "peerDependencies": {
     "eslint": "^8.0.0",
-    "eslint-config-prettier": "^8.0.0",
+    "eslint-config-prettier": "^8.0.0 || ^9.0.0",
     "eslint-plugin-fp": "^2.3.0",
     "prettier": "^2.0.0 || ^3.0.0"
   },
   "devDependencies": {
     "@riotjs/prettier-config": "^1.1.0",
-    "eslint": "^8.45.0",
-    "eslint-config-prettier": "^8.8.0",
-    "prettier": "^3.0.0"
+    "eslint": "^8.47.0",
+    "eslint-config-prettier": "^9.0.0",
+    "prettier": "^3.0.2"
   }
 }
