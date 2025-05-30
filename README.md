@@ -12,7 +12,7 @@ Riot default eslint config file
 Peer dependencies installation
 
 ```shell
-npm i -D eslint@8 eslint-plugin-fp@2 eslint-config-prettier@8 prettier@2
+npm i -D eslint@9 eslint-plugin-fp@2 eslint-config-prettier@10 prettier@3
 ```
 
 Config installation
@@ -23,7 +23,13 @@ npm i -D eslint-config-riot
 
 ## Usage
 
-Add `"extends": "eslint-config-riot"` to your `.eslintrc` file
+Extend your `eslint.config.js` file as follow:
+
+```js
+import riotEslintConfig from 'eslint-config-riot'
+
+export default defineConfig([{ extends: [riotEslintConfig] }])
+```
 
 [ci-image]: https://img.shields.io/github/actions/workflow/status/riot/eslint-config/test.yml?style=flat-square
 [ci-url]: https://github.com/riot/eslint-config/actions
