@@ -2,7 +2,8 @@
   "name": "eslint-config-riot",
   "version": "4.1.1",
   "description": " Riot default eslint config file",
-  "main": ".eslintrc.js",
+  "main": "eslint.config.js",
+  "type": "module",
   "scripts": {
     "prepublish": "npm test",
     "test": "eslint test.js"
@@ -23,15 +24,17 @@
   },
   "homepage": "https://github.com/riot/eslint-config#readme",
   "peerDependencies": {
-    "eslint": "^8.0.0",
-    "eslint-config-prettier": "^8.0.0 || ^9.0.0",
+    "eslint": "^9.0.0",
+    "eslint-config-prettier": "^10.0.0",
+    "eslint-plugin-jsdoc": "^50.0.0",
     "eslint-plugin-fp": "^2.3.0",
-    "prettier": "^2.0.0 || ^3.0.0"
+    "prettier": "^3.0.0"
   },
   "devDependencies": {
     "@riotjs/prettier-config": "^1.1.0",
-    "eslint": "^8.56.0",
-    "eslint-config-prettier": "^9.1.0",
-    "prettier": "^3.2.5"
+    "eslint": "^9.28.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-jsdoc": "^50.6.17",
+    "prettier": "^3.5.3"
   }
 }
