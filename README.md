@@ -26,6 +26,7 @@ npm i -D eslint-config-riot
 Extend your `eslint.config.js` file as follow:
 
 ```js
+import { defineConfig } from 'eslint/config'
 import riotEslintConfig from 'eslint-config-riot'
 
 export default defineConfig([{ extends: [riotEslintConfig] }])
