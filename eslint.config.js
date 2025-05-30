@@ -38,6 +38,7 @@ export default defineConfig([
     },
 
     rules: {
+      'jsdoc/require-jsdoc': 'off',
       'fp/no-arguments': 'error',
       'fp/no-class': 'error',
       'fp/no-delete': 'error',
