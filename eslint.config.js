@@ -2,41 +2,27 @@ import { defineConfig } from 'eslint/config'
 import jsdoc from 'eslint-plugin-jsdoc'
 import fp from 'eslint-plugin-fp'
 import globals from 'globals'
-import path from 'node:path'
-import { fileURLToPath } from 'node:url'
 import js from '@eslint/js'
-import { FlatCompat } from '@eslint/eslintrc'
-
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = path.dirname(__filename)
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-  recommendedConfig: js.configs.recommended,
-  allConfig: js.configs.all,
-})
+import prettier from 'eslint-config-prettier'
 
 export default defineConfig([
   jsdoc.configs['flat/recommended'],
+  js.configs.recommended,
+  prettier,
   {
-    extends: compat.extends('eslint:recommended', 'prettier'),
-
     plugins: {
       jsdoc,
       fp,
     },
-
     languageOptions: {
       globals: {
         ...globals.browser,
         ...globals.mocha,
         ...globals.node,
       },
-
       ecmaVersion: 2025,
       sourceType: 'module',
-      parserOptions: {},
     },
-
     rules: {
       'jsdoc/require-jsdoc': 'off',
       'fp/no-arguments': 'error',
