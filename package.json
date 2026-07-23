@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-riot",
-  "version": "5.0.2",
+  "version": "6.0.0",
   "description": " Riot default eslint config file",
   "main": "eslint.config.js",
   "type": "module",
